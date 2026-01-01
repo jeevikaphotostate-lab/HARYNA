@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Haryana & UP Online Services Portal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{font-family:Arial;background:#f4f6f9;margin:0}
+header{background:#0b5ed7;color:#fff;padding:20px;text-align:center}
+.search-box{max-width:420px;margin:15px auto}
+.search-box input{width:100%;padding:10px;font-size:16px}
+.container{padding:15px}
+.category{background:#fff;margin-bottom:20px;padding:15px;border-radius:6px}
+.category h2{color:#0b5ed7;border-bottom:1px solid #ddd}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
+.service{
+display:block;
+background:#eef2ff;
+padding:10px;
+border-radius:6px;
+text-decoration:none;
+color:#000;
+}
+.service:hover{background:#dbeafe}
+footer{background:#0b5ed7;color:#fff;text-align:center;padding:10px}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Haryana & UP Online Services</h1>
+<p>100+ Official Government Services</p>
+</header>
+
+<div class="search-box">
+<input type="text" id="search" placeholder="Search service..." onkeyup="filterServices()">
+</div>
+
+<div class="container">
+
+<!-- CERTIFICATE -->
+<div class="category">
+<h2>🧾 Certificate Services</h2>
+<div class="services">
+<a class="service" href="https://edistrict.up.gov.in/" target="_blank">Birth Certificate</a>
+<a class="service" href="https://edistrict.up.gov.in/" target="_blank">Death Certificate</a>
+<a class="service" href="https://edistrict.up.gov.in/" target="_blank">Income Certificate</a>
+<a class="service" href="https://edistrict.up.gov.in/" target="_blank">Caste Certificate</a>
+<a class="service" href="https://edistrict.up.gov.in/" target="_blank">Domicile Certificate</a>
+<a class="service" href="https://saralharyana.gov.in/" target="_blank">Marriage Certificate</a>
+<a class="service" href="https://saralharyana.gov.in/" target="_blank">Disability Certificate</a>
+<a class="service" href="https://saralharyana.gov.in/" target="_blank">EWS / BPL Certificate</a>
+</div>
+</div>
+
+<!-- AADHAAR -->
+<div class="category">
+<h2>🆔 Aadhaar & ID Services</h2>
+<div class="services">
+<a class="service" href="https://uidai.gov.in/" target="_blank">Aadhaar Update / Download</a>
+<a class="service" href="https://myaadhaar.uidai.gov.in/" target="_blank">Aadhaar PVC Card</a>
+<a class="service" href="https://www.pan.utiitsl.com/" target="_blank">PAN Card Apply</a>
+<a class="service" href="https://www.onlineservices.nsdl.com/paam/requestAndDownloadEPAN.html" target="_blank">PAN Download (e-PAN)</a>
+<a class="service" href="https://voters.eci.gov.in/" target="_blank">Voter ID Services</a>
+<a class="service" href="https://nfsa.gov.in/" target="_blank">Ration Card Services</a>
+<a class="service" href="https://eshram.gov.in/" target="_blank">e-Shram Card</a>
+</div>
+</div>
+
+<!-- TRANSPORT -->
+<div class="category">
+<h2>🚗 Transport Services</h2>
+<div class="services">
+<a class="service" href="https://parivahan.gov.in/" target="_blank">Driving License</a>
+<a class="service" href="https://parivahan.gov.in/" target="_blank">RC / Vehicle Services</a>
+<a class="service" href="https://echallan.parivahan.gov.in/" target="_blank">e-Challan Payment</a>
+<a class="service" href="https://fancy.parivahan.gov.in/" target="_blank">Fancy Number Booking</a>
+</div>
+</div>
+
+<!-- LAND -->
+<div class="category">
+<h2>🏠 Land & Property</h2>
+<div class="services">
+<a class="service" href="https://upbhulekh.gov.in/" target="_blank">Bhulekh UP</a>
+<a class="service" href="https://jamabandi.nic.in/" target="_blank">Jamabandi Haryana</a>
+<a class="service" href="https://igrsup.gov.in/" target="_blank">Property Registration (UP)</a>
+<a class="service" href="https://propertyregistration.haryana.gov.in/" target="_blank">Property Registration (Haryana)</a>
+</div>
+</div>
+
+<!-- FARMER -->
+<div class="category">
+<h2>👩‍🌾 Farmer & Agriculture</h2>
+<div class="services">
+<a class="service" href="https://pmkisan.gov.in/" target="_blank">PM-Kisan</a>
+<a class="service" href="https://pmfby.gov.in/" target="_blank">Crop Insurance (PMFBY)</a>
+<a class="service" href="https://soilhealth.dac.gov.in/" target="_blank">Soil Health Card</a>
+<a class="service" href="https://www.nabard.org/" target="_blank">Kisan Credit Card</a>
+</div>
+</div>
+
+<!-- EDUCATION -->
+<div class="category">
+<h2>👩‍🎓 Education</h2>
+<div class="services">
+<a class="service" href="https://scholarship.up.gov.in/" target="_blank">Scholarship (UP)</a>
+<a class="service" href="https://harchhatravratti.highereduhry.ac.in/" target="_blank">Scholarship (Haryana)</a>
+<a class="service" href="https://nta.ac.in/" target="_blank">Admit Card / Result</a>
+</div>
+</div>
+
+<!-- BUSINESS -->
+<div class="category">
+<h2>💼 Business & Trade</h2>
+<div class="services">
+<a class="service" href="https://udyamregistration.gov.in/" target="_blank">Udyam (MSME)</a>
+<a class="service" href="https://www.gst.gov.in/" target="_blank">GST Services</a>
+<a class="service" href="https://niveshmitra.up.gov.in/" target="_blank">Nivesh Mitra (UP)</a>
+<a class="service" href="https://saralharyana.gov.in/" target="_blank">SARAL Haryana</a>
+</div>
+</div>
+
+<!-- HEALTH -->
+<div class="category">
+<h2>🧑‍⚕️ Health</h2>
+<div class="services">
+<a class="service" href="https://beneficiary.nha.gov.in/" target="_blank">Ayushman Card</a>
+<a class="service" href="https://abdm.gov.in/" target="_blank">ABHA Health ID</a>
+<a class="service" href="https://cowin.gov.in/" target="_blank">COVID Certificate</a>
+</div>
+</div>
+
+<!-- OTHER -->
+<div class="category">
+<h2>📱 Other Important Services</h2>
+<div class="services">
+<a class="service" href="https://www.digilocker.gov.in/" target="_blank">DigiLocker</a>
+<a class="service" href="https://web.umang.gov.in/" target="_blank">UMANG App</a>
+<a class="service" href="https://cybercrime.gov.in/" target="_blank">Cyber Crime Complaint</a>
+<a class="service" href="https://rtionline.gov.in/" target="_blank">RTI Online</a>
+<a class="service" href="https://jansunwai.up.nic.in/" target="_blank">Jan Sunwai (UP)</a>
+<a class="service" href="https://register.csc.gov.in/" target="_blank">CSC Registration</a>
+</div>
+</div>
+
+</div>
+
+<footer>
+© 2026 Digital CSC Services | Haryana & UP
+</footer>
+
+<script>
+function filterServices(){
+let input=document.getElementById("search").value.toLowerCase();
+let services=document.getElementsByClassName("service");
+for(let i=0;i<services.length;i++){
+services[i].style.display=
+services[i].innerText.toLowerCase().includes(input)?"block":"none";
+}
+}
+</script>
+
+</body>
+</html>
